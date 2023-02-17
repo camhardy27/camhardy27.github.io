@@ -1,4 +1,4 @@
-(function (window) {
+(function(window) {
   "use strict";
   window.opspark = window.opspark || {};
   window.opspark.collectable = window.opspark.collectable || {};
@@ -16,7 +16,7 @@
 
   /**
    * init: Initialize all collectables.
-   *
+   
    * GOAL: Add as many collectables as necessary to make your level challenging.
    *
    * Use the createCollectable() Function to create collectables for the level.
@@ -39,7 +39,12 @@
     // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
 
     // example:
-    createCollectable(type.steve, 200, 170, 6, 0.7);
+    //createCollectable(type.steve, 200, 175);
+    createCollectable(type.kennedi, 400, 100, 2, 0.5);
+    createCollectable(type.db, 305, 510, 1, 0.4);
+    createCollectable(type.grace, 590, 400, 2, 0.3);
+
+
 
     // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////
