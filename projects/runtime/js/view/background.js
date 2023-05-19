@@ -60,12 +60,10 @@ var background = function (window) {
             // TODO 4: Part 1 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
             for (var i = 0; i < 7; i++) {
                 var building = draw.bitmap("img/green-house.jpg");
-                building.x = 100;
-                building.y = 200;
-                building.scaleX = 3.0;
-                building.scaleY = 3.0;
-                building * Math.Random()
+                building.x = i * 200;
+                building.y = groundY - buildingHeight;
             background.addChild(building);
+            buildings.push(building);
             }
            
               
@@ -96,6 +94,12 @@ var background = function (window) {
             }
 
             // TODO 4: Part 2 - Parallax
+            for (var i = 0; i < building.length; i++) {
+                var eachElement = buildings[i];
+                eachElement.x = eachElement.x - 3;
+                if (eachElement.x < -200) {
+                    eachElement.x = canvasWidth;
+                }
 
 
         } // end of update function - DO NOT DELETE
